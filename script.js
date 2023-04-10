@@ -63,7 +63,6 @@ const btnLogin = document.querySelector('.login__btn');
 const btnTransfer = document.querySelector('.form__btn--transfer');
 const btnLoan = document.querySelector('.form__btn--loan');
 const btnClose = document.querySelector('.form__btn--close');
-const btnSort = document.querySelector('.btn--sort');
 
 const inputLoginUsername = document.querySelector('.login__input--user');
 const inputLoginPin = document.querySelector('.login__input--pin');
@@ -362,15 +361,6 @@ btnClose.addEventListener("click", function (e) {
   // clean out the inputs
   inputCloseUsername.value = inputClosePin.value = '';
 
-});
-
-
-//! Implementing sort
-let sorted = false;
-btnSort.addEventListener('click', function (e) {
-  e.preventDefault();
-  displayMovements(currentAccount.movements, !sorted);
-  sorted = !sorted;
 });
 
 
